@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/layo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practica #2 Unidad #1"
+        android:textSize="35dp"
+        android:id="@+id/etiqueta1"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cuantas Celdas debe Generar:"
+        android:textSize="25dp"
+        android:id="@+id/etiqueta2"
+        android:layout_below="@id/etiqueta1"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celdas:"
+        android:textSize="25dp"
+        android:id="@+id/etiquetaCeldas"
+        android:layout_below="@id/etiqueta2"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renglones:"
+        android:textSize="25dp"
+        android:id="@+id/etiquetaRenglones"
+        android:layout_below="@id/etiquetaCeldas"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toRightOf="@+id/etiquetaCeldas"
+        android:layout_below="@id/etiqueta2"
+        android:layout_marginTop="25dp"
+        android:id="@+id/campo1"
+        android:layout_marginLeft="25dp"
+        android:inputType="number"
+        android:hint="Numero de Celdas"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/campoRenglones"
+        android:layout_toRightOf="@+id/etiquetaRenglones"
+        android:layout_below="@id/campo1"
+        android:inputType="number"
+        android:hint="Numero de Renglones"
+
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio"
+        android:layout_below="@+id/etiquetaRenglones"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="25dp">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vector"
+            android:textSize="25dp"
+            android:id="@+id/vector"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matriz"
+            android:textSize="25dp"
+            android:checked="true"
+            android:id="@+id/matriz"/>
+
+    </RadioGroup>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/menuListview"
+        android:entries="@array/opcinesmenu"
+        android:layout_below="@id/radio"
+
+
+        />
+
+
+
+
+
+</RelativeLayout>

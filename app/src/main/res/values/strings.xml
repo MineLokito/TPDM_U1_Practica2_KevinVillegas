@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TPDM_Practica2_KevinVillegas</string>
+
+    <array name="opcinesmenu">
+        <item>Capturar Valores</item>
+        <item>Mostrar Valores</item>
+        <item>Acerca de..</item>
+        <item>Salir</item>
+    </array>
+
+</resources>
