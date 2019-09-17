@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TPDM_Practica2_KevinVillegas</string>
+    <string name="app_name">TPDM_U1_Practica2_KevinVillegas</string>
 
     <array name="opcinesmenu">
         <item>Capturar Valores</item>
